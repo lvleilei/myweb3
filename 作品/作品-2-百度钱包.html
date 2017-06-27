@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body {
+            background-color: #ccc;
+        }
+        .money {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .money::before,
+        .money::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            /*background-color: red;*/
+
+            background: url(images/bg.png) no-repeat left;
+            /*过度*/
+            transition: all 1s;
+            /*背面不可见*/
+            backface-visibility: hidden;
+        }
+        .money::before {
+            transform: rotateY(-180deg);
+        }
+        .money::after {
+            /*left: 300px;*/
+            background-position: right 0;
+        }
+        .money:hover::before {
+            transform: rotateY(0deg);
+        }
+        .money:hover::after {
+            transform: rotateY(180deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <a href="../../index.html" style="position: fixed;top: 10px;left: 5px;font-size: 20px;color: red;">返回</a>
+
+    <div class="money"></div>
+
+
+</body>
+</html>

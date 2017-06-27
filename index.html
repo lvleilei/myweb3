@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+
+    <script src="js/jquery-slimscroll.min.js"></script>
+    <script src="js/drawImg.js"></script>
+
+    <script src="js/index.js"></script>
+    <title>fullpage版简历-LL</title>
+</head>
+<body>
+    <!--蝴蝶-->
+    <div class="butterfly">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <!--顶部固定导航栏-->
+    <ul id="LL-nav">
+        <li><a href="#page1">关于我</a><span></span></li>
+        <li><a href="#page2">专业技能</a><span></span></li>
+        <li><a href="#page3">我的人生</a><span></span></li>
+        <li><a href="#page4">我的作品</a><span></span></li>
+        <li><a href="#page5">联系我</a><span></span></li>
+    </ul>
+
+    <!--fullpage滚屏-->
+    <div id="dowebok">
+        <!-- 第一屏 关于我-->
+        <div class="section" id="page1">
+            <h1></h1>
+            <p>你从哪来，要去到哪里，你可还会回来</p>
+            <p>我叫吕磊</p>
+            <p>24岁</p>
+            <p>我要成为一名前端工程师</p>
+            <p>邮箱13520874771@163.com</p>
+        </div>
+
+        <!-- 第二屏 专业技能-->
+        <div class="section" id="page2">
+            <div class="page2-box">
+                <h2>我的技能</h2>
+                <canvas id="canvas1" width="250" height="250"></canvas>
+                <canvas id="canvas2" width="250" height="250"></canvas>
+                <canvas id="canvas3" width="250" height="250"></canvas>
+                <canvas id="canvas4" width="250" height="250"></canvas>
+            </div>
+
+        </div>
+
+        <!-- 第三屏-->
+        <div class="section" id="page3">
+            <!--星空-->
+            <div class="stars"></div>
+            <!--文本-->
+            <h1>木兰辞</h1>
+            <p>
+                如果你看到这个简历，请务必联系我。我叫吕磊，家在河北省辛集市。进京两年了，有一年多的前端工作经验，
+                因个人原因需要找一份新的工作。非常希望能与您当面洽谈，你会了解到一个工作热情的我。
+            </p>
+            <p>本人毕业于计算机科学与技术专业，有吃苦耐劳爱思考的精神。对新技术有求知欲，
+                熟练掌握HTML、CSS，JS，jQuery、H5、Bootstrap、等技术，对后台PHP语言也有一定了解。I want to Join you！
+            </p>
+        </div>
+
+        <!-- 第四屏-->
+        <div class="section " id="page4">
+            <h2>我的作品</h2>
+            <ul>
+                <li>
+                    <a href="作品/作品-1-立方体原理.html"><img src="images/lft.jpg" alt=""/>
+                        <span></span>
+                        <p>立方体原理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="作品/作品-2-百度钱包.html"><img src="images/bdqb.jpg" alt=""/>
+                        <span></span>
+                        <p>百度钱包</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="作品/03-wjs-项目-LL/index.html"><img src="images/wjs.jpg" alt=""/>
+                        <span></span>
+                        <p>微金锁案例</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="作品/小米产品/index.html"><img src="images/xiaomi.jpg" alt=""/>
+                        <span></span>
+                        <p>小米产品</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 第五屏-->
+        <div class="section" id="page5">
+            <img src="images/light.png" alt=""/>
+            <h2>好钢用在刀刃上，选我，错不了</h2>
+        </div>
+    </div>
+
+    <!--右侧小圆点-->
+    <div class="right-nav">
+        <ul>
+            <li><a href="#page1"></a></li>
+            <li><a href="#page2"></a></li>
+            <li><a href="#page3"></a></li>
+            <li><a href="#page4"></a></li>
+            <li><a href="#page5"></a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
